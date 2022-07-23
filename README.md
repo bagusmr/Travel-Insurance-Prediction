@@ -42,20 +42,20 @@ There are some steps that were conducted to ensure the dataset is proper modelli
 - According to the modelling results, the best fit model with 79% balanced accuracy was using Decision Tree Classifier with undersample handling for imbalance data and hyperparameter tuning.
 - Annual Income was the most influential feature on passenger's tendency to buy travel insurance, followed by Age and Family Members. Ever travelled abroad is the least important feature that affected on passenger's interest. This is probably due to not everyone being financially capable and having the interest to travel abroad for vacation.
 # Business Recommendation
-There is a probability that the price of travel insurance is too expensive, which is why only passengers with high annual incomes could buy travel insurance. One of the solutions to this problem is by grading the price of travel insurance into 3 types of packages which are Bronze, Silver, and Gold to meet customer's interest related to their financial capabilities. Therefore, a mathematical simulation is performed to look for gained sales volume which will affect sales amount. 
-We knew that existing passengers who bought travel insurance were 710 people. Assuming the insurance price is around 433k IDR which is based on common insurance price of an international flight from Indonesia to Singapore, we can calculate these and have a result of sales amount of around 307.42 million IDR. 
+There is a probability that the price of travel insurance is too expensive, which is why only passengers with high annual incomes could buy travel insurance. One of the solutions to this problem is by grading the price of travel insurance into 3 types of packages which are Bronze, Silver, and Gold to meet customer's interest related to their financial capabilities. Therefore, a mathematical simulation is performed to look for gained sales volume which will affect sales amount.
+We knew that existing passengers who bought travel insurance were 710 people. Assuming the insurance price is around 433k IDR which is based on common insurance price of an international flight from Indonesia to Singapore, we can calculate these and have a result of sales amount of around 307.42 million IDR.
 From the modelling, we captured 270 True Negatives, meaning there are 1138 passengers who did not have interest to buy travel insurance and will be given the grading packages treatment. Assuming 433k IDR is the highest price which will be labelled as Gold package, we can calculate the Silver and Bronze package price by using this method:
-- Gold Price - (Annual income mean relative difference percentage between classes * Gold Price) 
-The mean relative difference percentage was measured by clustering passengers based on all annual income unique data into 3 classes equally, finding mean of the 3 classes, and calculating using this method :
-- ((Gold Income Mean - Silver Income Mean)/Gold Income Mean) * 100 for mean relative difference between Gold and Silver Annual Income
-- ((Gold Income Mean - Bronze Income Mean)/Gold Income Mean) * 100  for mean relative difference between Gold and Bronze Annual Income 
+- Gold Price - (Annual income mean relative difference percentage between classes * Gold Price).
+The mean relative difference percentage was measured by clustering passengers based on all annual income unique data into 3 classes equally, finding mean of the 3 classes, and calculating using this method:
+- ((Gold Income Mean - Silver Income Mean)/Gold Income Mean) * 100 for mean relative difference between Gold and Silver Annual Income.
+- ((Gold Income Mean - Bronze Income Mean)/Gold Income Mean) * 100  for mean relative difference between Gold and Bronze Annual Income.
 From there, we know that :
 - Mean relative difference for Silver Income is 26.4% from Gold Income, hence the price for Silver package is 320k IDR.
-- Mean relative difference for Bronze Income is 61.6% from Gold Income, hence the price for Bronze package is 166k IDR. 
+- Mean relative difference for Bronze Income is 61.6% from Gold Income, hence the price for Bronze package is 166k IDR.
 Since the Gold price was already given to the 710 passengers, if we assume we can capture at least 10% of new customers from the predicted 1138 by giving them the Silver and Bronze packages, we will have at least:
-- 114 new customers who buy Bronze package
-- 102 new customers who buy Silver package 
-Therefore, we will gain additional sales amount :
-- Bronze package = 18.92 million IDR
-- Silver package = 32.64 million IDR 
-- Thus, we will gain 51.56 million IDR in total, which means 16% to be added up from the existing sales amount.
+- 114 new customers who buy Bronze package.
+- 102 new customers who buy Silver package.
+Therefore, we will gain additional sales amount:
+- Bronze package = 18.92 million IDR.
+- Silver package = 32.64 million IDR.
+Thus, we will gain 51.56 million IDR in total, which means 16% to be added up from the existing sales amount.
