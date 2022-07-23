@@ -16,7 +16,7 @@ The dataset contains a list of 1987 recorded passengers, some of them have bough
 - Frequent Flyer: Derived data based on the passenger's history of booking air tickets at least 4 different instances in the last 2 years (2017-2019).
 - Ever Travelled Abroad: Whether the passenger did or did not have travelled to a foreign country.
 - Travel Insurance: Whether the passenger bought the travel insurance or not in 2019. 
-On this dataset, the total passenger who bought travel insurance is 710 passengers which is around 35% of the total recorded. 
+On this dataset, the total passenger who bought travel insurance is 710 passengers which is around 35% of the total recorded.
 For details of the dataset, please visit https://www.kaggle.com/datasets/tejashvi14/travel-insurance-prediction-data
 # Data Insights
 - Passengers with high annual incomes tend to buy travel insurance. This could also mean that the travel insurance price is too expensive.
