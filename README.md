@@ -1,15 +1,10 @@
-This is a final project assignment from Rakamin Academy based on Kaggle dataset 2019
-
-# Travel-Insurance-Prediction
-This is a final project of data science bootcamp on Rakamin Academy which consist of EDA, preprocessing, and modelling of Travel Insurance Prediction data based on Kaggle dataset on 2019
-# Lucky-7
-Anggota : 
-- Bagus Maulidika Rofi ( Ketua )
-- Irfan Divi Zianka
-- Tristan Matias
-- Muthia Sofi
-- Rifki Muhammad
-Final Project Batch 21 - Travel Insurance
+# Travel Insurance Prediction
+Travel insurance is a type of insurance that covers the costs and losses associated with traveling. It is useful protection for those traveling domestically or abroad. (Investopedia)
+# Business Understanding
+- Problem: According to demographical statistics captured by jerseyislandholidays website, there are 41% americans who did not buy travel insurance with various reasons such as it was too expensive, they were traveled for a short vacation, forgot to buy, did not think it was necessary, and waste of money. This reasons have led to almost 50% of americans had to bear the concequences of cost loss during their vacation. The same reasons also happen on british, where 21% of them did not buy travel insurance, 37% felt it was unnecessary, and 28% said that cost losses on vacation was risk they can bear with. In Indonesia, this is also a common think to happen. Most of indonesian who took flight services did not think travel insurance is a useful feature, and these kind of perceptions may lead to revenue drop, hence not good for travel insurance company. On the other hand, corona virus travel regulations in Indonesia had been loosened up, leading to the increased number of people who took flight services since February 2022.
+- Goal: Increasing the sales amount of travel insurance product.
+- Objectives: Conducting analytical approach to identify potential features that may influence customer and suggesting business recomendations which will affect customers to buy travel insurance.
+-Business Metric : Sales Amount
 Stage 1
 - Kami melakukan EDA yaitu univariate analysis, bivariate analysis, dan multivariate analysis untuk menganalisa secara menyeluruh  insight pada setiap feature dan  
   hubungannya dengan target.
